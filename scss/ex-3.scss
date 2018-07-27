@@ -1,0 +1,14 @@
+// DONE
+// Praticamos o uso do extend para padronização de código
+.button {
+    padding: 5px;
+    border-width: 10px;
+    border-style: groove;
+    border-radius: 20%;
+}
+
+.btn-follow {
+    @extend .button;
+    color: red;
+    display: flex;
+}

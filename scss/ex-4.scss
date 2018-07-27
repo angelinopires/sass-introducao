@@ -1,0 +1,24 @@
+// DONE
+// Mixins são feitos para aproveitam trechos de códigos e inserir diversos parâmetros através do @include
+// Caso chamarmos com ($color: black, $size: 15px) podemos trocar a ordem natural do elemento
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin box-sizing($name) {
+    -webkit-box-sizing: $name;
+       -moz-box-sizing: $name;
+            box-sizing: $name;
+}
+
+.box {
+    @include border-radius(15px);
+}
+
+.box-sizing {
+    @include box-sizing(border-box);
+}   

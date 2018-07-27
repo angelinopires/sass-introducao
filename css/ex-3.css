@@ -1,0 +1,9 @@
+.button, .btn-follow {
+  padding: 5px;
+  border-width: 10px;
+  border-style: groove;
+  border-radius: 20%; }
+
+.btn-follow {
+  color: red;
+  display: flex; }
