@@ -1,0 +1,24 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin box-sizing($name) {
+    -webkit-box-sizing: $name;
+       -moz-box-sizing: $name;
+            box-sizing: $name;
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop-width}) {
+        @content;
+    }
+}

@@ -1,0 +1,40 @@
+// DONE
+// Media queries introduzidos
+
+$tablet-width: 768px;
+$border-rd: 50%;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+header {
+    display: flex;
+    margin: 30px 0;
+    flex-flow: column;
+
+    .avatar {
+        -webkit-border-radius: $border-rd;
+        -moz-border-radius: $border-rd;
+        border-radius: $border-rd;
+        margin: 0 auto;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    @include tablet {
+        flex-flow: row;
+
+        .avatar {
+            margin: 0 40px;
+        }
+        
+        .desc {
+            text-align: left;
+        }       
+    }
+}
