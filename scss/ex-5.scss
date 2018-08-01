@@ -1,0 +1,18 @@
+// DONE
+// O objetivo era demonstrar como criar e como utilizar uma função. Bem semelhante ao javascript
+
+@function transform($value) {
+    @return ($value / 16);
+}
+
+html {
+    width: 100%;
+}
+
+h1 {
+    font-size: transform(20)rem;
+}
+
+p {
+    font-size: transform(17)rem;
+}

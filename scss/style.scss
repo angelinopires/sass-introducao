@@ -8,3 +8,9 @@
 .box {
   @include border-radius(10px);
 }
+
+$anyvar: rgba(255, 255, 255, 1);
+
+h1 {
+  color: $anyvar;
+}
